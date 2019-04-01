@@ -1,0 +1,3 @@
+swig -python l.i
+gcc -c -fpic l.c 1_wrap.c -I/usr/include/python2.7
+gcc -shared l.o l_wrap.o -o _moon.so
